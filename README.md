@@ -76,7 +76,7 @@
 
 1. 登录阿里云实例的 **VNC 控制台**
 2. 复制本项目中 `vnc.sh` 的全量内容。您可以直接一键复制执行以下命令来获取：
-前往 GitHub 仓库直接打开 [vnc.sh](https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/vnc.sh) 复制源码全文
+前往 GitHub 仓库直接打开 [vnc.sh](https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/vnc.sh) 复制源码全文
 3. 将代码 **完整粘贴到 VNC 界面并回车执行**。
 4. 初始完毕后即可按以下默认信息 SSH 远程登录：
    - **用户名**：`root`
@@ -88,7 +88,7 @@
 
 使用 **root 用户** 登录 Alpine 后，下载并执行脚本：
 ```bash
-wget -qO- https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/install2.sh | sh
+wget -qO- https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/install2.sh | sh
 ```
 
 > 说明：`install2.sh` 按 POSIX sh 编写并从 `/dev/tty` 读取交互输入，可直接管道给 `sh` 执行；Alpine 默认 ash 不支持 `bash <(...)` 进程替换，请勿改用该写法。
@@ -101,10 +101,10 @@ wget -qO- https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/ins
 
 ```bash
 # wget
-bash <(wget -qO- https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/install.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/install.sh)
 
 # curl
-bash <(curl -sL https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/install.sh)
 ```
 
 脚本将提供丝滑的交互式配置，自动：
@@ -169,10 +169,10 @@ systemctl stop aliyun-ecs-bot.service
 
 ```bash
 # wget
-bash <(wget -qO- https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/uninstall.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/uninstall.sh)
 
 # curl
-bash <(curl -sL https://raw.githubusercontent.com/10000ge10000/aliyun_monitor/main/uninstall.sh)
+bash <(curl -sL https://raw.githubusercontent.com/naerweiya-crypto/aliyun_monitor/main/uninstall.sh)
 ```
 
 ---
